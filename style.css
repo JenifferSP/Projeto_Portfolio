@@ -76,6 +76,9 @@ body::-webkit-scrollbar {
 
     scroll-behavior: smooth;
   } 
+  html{
+    scroll-behavior: smooth;
+  }
   
 /*cabeçalho*/
 .cabeçalho{
@@ -366,4 +369,36 @@ i{
     right: 10rem;
     margin-top: -4.3rem;
 
+}
+
+#btnToTop{
+    position: fixed;
+    bottom: 50px;
+    right: 20px;
+    width: 50px;
+    height: 50px;
+    background-color: rgb(250, 234, 213);
+    border-radius: 50%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    border: 5px solid white;
+
+}
+#btnToTop:hover{
+    transform: scale(1.09);
+    transition: 0.3s;
+
+}
+.arrow{
+    border: solid #4A1548;
+    border-width: 0 7px 7px 0;
+    padding: 5px;
+    display: inline-block;
+}
+.up{
+    transform: rotate(-135deg);
+    -webkit-transform: rotate(-135deg);
 }
